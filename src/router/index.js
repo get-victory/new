@@ -6,10 +6,9 @@ import Index from '../components/Index.vue'
 Vue.use(VueRouter)
 
 const routes = [
-  { path: '/', redirect: '/login' },
+  { path: '/', redirect: '/index' },
   { path: '/login', name: 'login', component: Login },
   { path: '/index', name: 'index', component: Index }
-
 ]
 
 const router = new VueRouter({

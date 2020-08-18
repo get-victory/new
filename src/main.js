@@ -5,6 +5,8 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import axios from 'axios'
 
+Vue.config.productionTip = false
+Vue.use(ElementUI)
 // axios 配置,将axios挂在到vue实例上，所有原型实例可以共享
 Vue.prototype.$axios = axios
 // 配置基准地址
@@ -34,8 +36,6 @@ axios.interceptors.response.use(function (response) {
   // 对错误信息进行处理
   return Promise.reject(error)
 })
-Vue.config.productionTip = false
-Vue.use(ElementUI)
 
 new Vue({
   router,
