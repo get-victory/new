@@ -68,7 +68,7 @@ export default {
   methods: {
   /* 右上角退出按钮,确定退出走then */
     Logout () {
-      /* 退出前先询问下 */
+      /* 退出前先询问下，，， */
       this.$confirm('亲，确定要退出吗？', '消息提示', {
         type: 'warning'
       }).then(() => {
